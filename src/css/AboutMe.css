@@ -1,0 +1,88 @@
+#about-me-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". top ."
+    ". bottom .";
+}
+
+/* SEKCJA PIERWSZA */
+.section-about-me{
+  grid-area: top;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "left right"
+}
+
+.about-me-left-side{
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-left-side h1{
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.about-me-left-side p{
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.about-me-right-side{
+  grid-area: right;
+}
+
+/* SEKCJA DRUGA */
+.section-technologies{
+  grid-area: bottom;
+  width: 100%;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header header header header header header header "
+    ". . . . . . ."
+}
+
+.section-technologies h1{
+  grid-area: header;
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.svg-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s;
+}
+
+.svg-container::after{
+  content: attr(data-tool-tip);
+  opacity: 0;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.svg-container:hover::after{
+  opacity: 1;
+}
+.svg-container:hover{
+  transform: scale(1.2);
+}
+
+.svg-container svg{
+  height: 100px;
+  width: 100px;
+}
+
+#javascript svg, #react svg, #redux svg{
+  padding: 8px 0;
+  box-sizing: border-box;
+}

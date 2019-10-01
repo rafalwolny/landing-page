@@ -1,0 +1,62 @@
+#landing-page-container{
+  height: 100vh;  
+}
+
+.background-container{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.shadow{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.250);
+}
+
+.landing-page{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page h1{
+  color: white;
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  position: relative;
+  animation-name: move-from-left;
+  animation-duration: 1.5s;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.landing-page p{
+  color: lightgray;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  text-align: center;
+}
+
+@keyframes move-from-left{
+  0%   {left: -60vw; opacity: 0;}
+  100% {left: 0; opacity: 1;}
+}
+
+@keyframes appear{
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
