@@ -22,7 +22,7 @@ export const selectPolishLanguage = () => {
       navbarThree: 'PORTFOLIO',
       navbarFour: 'KONTAKT',
       aboutMeOne: 'O MNIE',
-      aboutMeTwo: 'Jestem studentem pierwszego roku Informatyki w Biznesie na Uniwersytecie Ekonomicznym we Wrocławiu. Zajmuję się programowaniem stron internetowych wysokiej jakości. Moje projekty to strony zoptymalizowane i responsywne- dobrze wyświetlające się nie tylko na ekranach komputerów, ale także na urządzeniach mobilnych.',
+      aboutMeTwo: 'Jestem studentem pierwszego roku Informatyki na Wyższej Szkole Bankowej we Wrocławiu. Zajmuję się programowaniem stron internetowych wysokiej jakości.',
       aboutMeThree: 'TECHNOLOGIE'
     }
   };

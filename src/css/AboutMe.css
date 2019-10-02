@@ -1,5 +1,6 @@
 #about-me-container{
   width: 100%;
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 10vw auto 10vw;
   grid-template-rows: auto;

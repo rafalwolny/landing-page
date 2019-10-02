@@ -5,9 +5,9 @@ import '../css/AboutMe.css';
 
 class AboutMe extends React.Component {
   render(){
-  console.log(this.props.selectedLanguage);
+  // console.log(this.props.selectedLanguage);
   return (
-    <section id="about-me-container">
+    <section name="about-me" id="about-me-container">
       <div className="section-about-me">
         <div className="about-me-left-side">
           <h1>{this.props.selectedLanguage.aboutMeOne}</h1>
