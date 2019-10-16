@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import { selectEnglishLanguage, selectPolishLanguage } from '../actions';
 import '../css/NavBar.css';
@@ -29,28 +29,32 @@ class NavBar extends React.Component {
   render(){
     return(
       <header id="nav-bar-container" className={this.state.scrolled ? 'scrolled' : 'fade'}>
-        <div className="left-side">
+        <div className="nav-bar-left-side">
           <div id="ENG" className="button" onClick={() => this.props.selectEnglishLanguage()}></div>
           <div id="PL" className="button" onClick={() => this.props.selectPolishLanguage()}></div>
         </div>
-        <div className="right-side">
+        <div id="hamburger" className={this.state.scrolled ? 'scrolled' : 'fade'}>
+          <label htmlFor="toggle">&#9776;</label>
+        </div>
+        <input type="checkbox" id="toggle"/>
+        <div className="nav-bar-right-side">
           <div>
-            <Link activeClass="active" to="home" spy={true} smooth={true} onSetActive={this.handleSetActive} className="navbar-link">
+            <Link to="home" spy={true} smooth={true} onSetActive={this.handleSetActive} className="navbar-link">
               {this.props.selectedLanguage.navbarOne}
             </Link>
           </div>
           <div>
-            <Link activeClass="active" to="about-me" spy={true} smooth={true} className="navbar-link">
+            <Link to="about-me" spy={true} smooth={true} offset={-50} className="navbar-link">
               {this.props.selectedLanguage.navbarTwo}
             </Link>
           </div>
           <div>
-            <Link activeClass="active" to="portfolio" spy={true} smooth={true} className="navbar-link">
+            <Link to="portfolio" spy={true} smooth={true} offset={-50} className="navbar-link">
               {this.props.selectedLanguage.navbarThree}
             </Link>
           </div>
           <div>
-            <Link activeClass="active" to="contact" spy={true} smooth={true} className="navbar-link">
+            <Link to="contact" spy={true} smooth={true} offset={-50} className="navbar-link">
               {this.props.selectedLanguage.navbarFour}
             </Link>
           </div>

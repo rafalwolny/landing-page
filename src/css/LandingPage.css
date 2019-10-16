@@ -27,9 +27,9 @@
 
 .landing-page h1{
   color: white;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 300;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   position: relative;
   animation-name: move-from-left;
   animation-duration: 1s;

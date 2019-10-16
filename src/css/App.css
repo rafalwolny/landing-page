@@ -24,3 +24,22 @@ body{
 ::-webkit-scrollbar-thumb{
   background: rgb(72, 80, 87);  
 }
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 599px){
+  html{
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px){
+  html{
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px){
+  html{
+    font-size: 0.8rem;
+  }
+}

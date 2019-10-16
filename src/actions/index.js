@@ -22,7 +22,7 @@ export const selectPolishLanguage = () => {
       navbarThree: 'PORTFOLIO',
       navbarFour: 'KONTAKT',
       aboutMeOne: 'O MNIE',
-      aboutMeTwo: 'Jestem studentem pierwszego roku Informatyki na Wyższej Szkole Bankowej we Wrocławiu. Zajmuję się programowaniem stron internetowych wysokiej jakości.',
+      aboutMeTwo: 'bla bla bla',
       aboutMeThree: 'TECHNOLOGIE'
     }
   };
