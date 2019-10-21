@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.e944fa34.chunk.css",
+    "main.js": "/landing-page/static/js/main.c44ffad0.chunk.js",
+    "main.js.map": "/landing-page/static/js/main.c44ffad0.chunk.js.map",
+    "runtime~main.js": "/landing-page/static/js/runtime~main.bc0aaa2c.js",
+    "runtime~main.js.map": "/landing-page/static/js/runtime~main.bc0aaa2c.js.map",
+    "static/js/2.e1be74df.chunk.js": "/landing-page/static/js/2.e1be74df.chunk.js",
+    "static/js/2.e1be74df.chunk.js.map": "/landing-page/static/js/2.e1be74df.chunk.js.map",
+    "index.html": "/landing-page/index.html",
+    "precache-manifest.5c500fe2d915c404b002d89f7ff4e9b6.js": "/landing-page/precache-manifest.5c500fe2d915c404b002d89f7ff4e9b6.js",
+    "service-worker.js": "/landing-page/service-worker.js",
+    "static/css/main.e944fa34.chunk.css.map": "/landing-page/static/css/main.e944fa34.chunk.css.map",
+    "static/media/LandingPage.css": "/landing-page/static/media/background.969ed640.jpg"
+  }
+}
