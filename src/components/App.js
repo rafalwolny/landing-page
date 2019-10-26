@@ -4,6 +4,7 @@ import LandingPage from './LandingPage';
 import NavBar from './NavBar';
 import AboutMe from './AboutMe';
 import Portoflio from './Portfolio';
+import Contact from './Contact';
 import '../css/App.css';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <LandingPage />
       <AboutMe />
       <Portoflio />
+      <Contact />
     </div>
   );
 }

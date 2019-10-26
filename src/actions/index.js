@@ -8,7 +8,10 @@ export const selectEnglishLanguage = () => {
       navbarFour: 'CONTACT',
       aboutMeOne: 'ABOUT ME',
       aboutMeTwo: 'English',
-      aboutMeThree: 'TECHNOLOGIES'
+      aboutMeThree: 'TECHNOLOGIES',
+      contactOne: 'Name',
+      contactTwo: 'E-mail adress',
+      contactThree: 'Message'
     }
   };
 };
@@ -23,7 +26,10 @@ export const selectPolishLanguage = () => {
       navbarFour: 'KONTAKT',
       aboutMeOne: 'O MNIE',
       aboutMeTwo: 'bla bla bla',
-      aboutMeThree: 'TECHNOLOGIE'
+      aboutMeThree: 'TECHNOLOGIE',
+      contactOne: 'Twoja nazwa',
+      contactTwo: 'Adres email',
+      contactThree: 'Wiadomość'
     }
   };
 };

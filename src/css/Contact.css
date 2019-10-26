@@ -1,0 +1,54 @@
+.contact-container{
+  background-color: rgb(46, 50, 54);
+  display: grid;
+  grid-template-columns: 10vw 50vw 30vw 10vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". left right ."
+}
+
+.form-container{
+  grid-area: left;
+  justify-self: stretch;
+  grid-gap: 1.5rem;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4rem 12rem;
+}
+
+.input-email-container{
+  grid-column-start: 2;
+}
+
+.input-message-container{
+  grid-column: 1 / span 2;
+  grid-row-start: 2;
+}
+
+.input-name-container, .input-email-container, .input-message-container{
+  display: grid;
+  justify-items: stretch; 
+}
+
+.input-name, .input-email, .input-message{
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background: white;
+}
+
+.input-name:focus, .input-email:focus, .input-message:focus{
+  outline: none;
+  box-shadow: 0 0 2px 1px rgb(255, 255, 25);
+}
+
+.contact-info{
+  grid-area: right;
+  justify-self: stretch;
+}
+
+.contact-container svg{
+  height: 50px;
+  width: 50px;
+}
