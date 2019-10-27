@@ -1,20 +1,27 @@
 .contact-container{
   background-color: rgb(46, 50, 54);
   display: grid;
-  grid-template-columns: 10vw 50vw 30vw 10vw;
+  grid-template-columns: 10vw 50vw 5vw 25vw 10vw;
   grid-template-rows: auto;
-  grid-template-areas: 
-    ". left right ."
+  grid-template-areas:
+    ". header header header ." 
+    ". left . right ."
+}
+
+.contact-container h1{
+  grid-area: header;
+  color: white;
+  font-size: 2.5rem;
 }
 
 .form-container{
   grid-area: left;
   justify-self: stretch;
   grid-gap: 1.5rem;
-  margin: 2rem;
-  display: grid;
+  margin: 2rem 0;
+  display: grid;  
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4rem 12rem;
+  grid-template-rows: 3rem 10rem;
 }
 
 .input-email-container{
@@ -32,10 +39,24 @@
 }
 
 .input-name, .input-email, .input-message{
+  padding: 0 1rem;
+  color: rgb(46, 50, 54);
+  font-weight: bold;
+  font-size: 1rem;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 7px;
   border: none;
+  box-shadow: 0 0 2px 1px rgb(72, 80, 87);
   background: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input-message{
+  padding: 1rem 1rem;
+}
+
+.input-name::-webkit-input-placeholder, .input-email::-webkit-input-placeholder, .input-message::-webkit-input-placeholder{
+  color: rgba(72, 80, 87, .5);
 }
 
 .input-name:focus, .input-email:focus, .input-message:focus{
@@ -43,12 +64,46 @@
   box-shadow: 0 0 2px 1px rgb(255, 255, 25);
 }
 
+.button{
+  grid-column-end: span 2;
+  grid-row-end: span 3;
+  display: inline-block;
+  justify-self: stretch;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(46, 50, 54);
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 1px rgb(72, 80, 87);
+  background-color: white;
+  transition: .2s;
+}
+
+.button:hover{
+  background-color: rgb(255, 255, 25);
+}
+
 .contact-info{
   grid-area: right;
   justify-self: stretch;
+  margin: 2rem 0;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 2px 1px rgb(72, 80, 87);
+  display: grid;
+}
+
+.contact-svg-container{
+  margin: 2rem;
 }
 
 .contact-container svg{
   height: 50px;
   width: 50px;
+}
+
+.linkedin-svg{
+  background-color: #5846e0;
 }

@@ -30,8 +30,8 @@ class NavBar extends React.Component {
     return(
       <header id="nav-bar-container" className={this.state.scrolled ? 'scrolled' : 'fade'}>
         <div className="nav-bar-left-side">
-          <div id="ENG" className="button" onClick={() => this.props.selectEnglishLanguage()}></div>
-          <div id="PL" className="button" onClick={() => this.props.selectPolishLanguage()}></div>
+          <div id="ENG" className="flag-icon" onClick={() => this.props.selectEnglishLanguage()}></div>
+          <div id="PL" className="flag-icon" onClick={() => this.props.selectPolishLanguage()}></div>
         </div>
         <div id="hamburger" className={this.state.scrolled ? 'scrolled' : 'fade'}>
           <label htmlFor="toggle">&#9776;</label>
