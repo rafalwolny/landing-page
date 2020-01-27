@@ -14,7 +14,7 @@ class AboutMe extends React.Component {
             <p>{this.props.selectedLanguage.aboutMeTwo}</p>
           </div>
           <div className="about-me-right-side">
-            <img alt=""></img>
+            {/* <img className="portrait" src="https://i.ibb.co/gM9XC2R/portrait.jpg" alt="portrait" /> */}
           </div>
         </div>
         <div className="section-technologies">

@@ -20,16 +20,20 @@
   grid-gap: 1.5rem;
   margin: 2rem 0;
   display: grid;  
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 3rem 10rem;
 }
 
+.input-name-container{
+  grid-column: 1 / span 2;
+}
+
 .input-email-container{
-  grid-column-start: 2;
+  grid-column: 3 / span 2;
 }
 
 .input-message-container{
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 4;
   grid-row-start: 2;
 }
 
@@ -65,10 +69,11 @@
 }
 
 .button{
-  grid-column-end: span 2;
+  grid-column: 2 / span 2;
   grid-row-end: span 3;
-  display: inline-block;
-  justify-self: stretch;
+  justify-self: center;
+  box-sizing: border-box;
+  padding: 0 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: rgb(46, 50, 54);
@@ -95,8 +100,24 @@
   display: grid;
 }
 
+.contact-links-top{
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.contact-links-top p{
+  color: rgb(46, 50, 54);
+  font-size: 1.2em;
+}
+
+.contact-links-bottom{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .contact-svg-container{
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 .contact-container svg{
@@ -105,5 +126,16 @@
 }
 
 .linkedin-svg{
-  background-color: #5846e0;
+  background-color: #006192;
+}
+
+@media only screen and (max-width: 599px){
+  .form-container{
+    display: none;
+  }
+
+  .contact-info{
+    grid-column: 2 / span 3;
+  }
+
 }

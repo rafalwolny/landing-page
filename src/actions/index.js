@@ -27,7 +27,7 @@ export const selectPolishLanguage = () => {
       navbarThree: 'PORTFOLIO',
       navbarFour: 'KONTAKT',
       aboutMeOne: 'O MNIE',
-      aboutMeTwo: 'bla bla bla',
+      aboutMeTwo: 'Jestem studentem Informatyki w Wyższej Szkole Bankowej.',
       aboutMeThree: 'TECHNOLOGIE',
       contactHeader: 'ZAPRASZAM DO KONTAKTU',
       contactOne: 'Twoja nazwa',

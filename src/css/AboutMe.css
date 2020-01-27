@@ -39,6 +39,10 @@
   grid-area: right;
 }
 
+.portrait {
+  width: 400px;
+}
+
 /* SEKCJA DRUGA */
 .section-technologies{
   grid-area: bottom;
